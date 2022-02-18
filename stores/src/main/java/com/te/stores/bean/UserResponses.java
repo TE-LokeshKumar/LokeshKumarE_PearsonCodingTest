@@ -14,6 +14,6 @@ import lombok.NoArgsConstructor;
 public class UserResponses {
 
 	private boolean error;
-	
+
 	private List<StoreDetailsModel> data;
 }

@@ -5,16 +5,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import com.te.stores.bean.StoreDetails;
-
 public class Helper {
 
-	public static long countDays(StoreDetails target) {
+	public static long countDays(String date) {
 		Date from = null;
 		long difference = 0;
 
 		try {
-			from = new SimpleDateFormat("dd/MM/yyyy").parse(target.getOpenedDate());
+			from = new SimpleDateFormat("dd/MM/yyyy").parse(date);
 
 			Date to = new Date();
 

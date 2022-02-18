@@ -30,8 +30,9 @@ public class StoresDetailsTest {
 		System.out.println(mapper.writeValueAsString(model));
 		
 		StoreDetailsModel redValue =  mapper.readValue(json, StoreDetailsModel.class);
+		System.out.println(json);
 		
-		assertEquals(json, mapper.writeValueAsString(redValue));
+		assertEquals(json, mapper.writeValueAsString(model));
 		
 		
 	}

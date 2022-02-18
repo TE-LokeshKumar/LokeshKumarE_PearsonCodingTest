@@ -1,15 +1,16 @@
-package com.te.stores.bean;
+package com.te.stores.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class UserResponse {
+@NoArgsConstructor
+public class ExceptionResponse {
 
 	private boolean error;
 
-	private Object data;
+	private String message;
+
 }
